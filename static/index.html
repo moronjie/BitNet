@@ -48,7 +48,9 @@
 
         <div class="prompt-section" >
             <h2>Prompt:</h2>
-            <p>{{ prompt }}</p>
+            {% if output %}
+                <p>{{ prompt }}</p>
+            {% endif %}
         </div>
 
         <div class="output-section" id="output">
